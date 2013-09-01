@@ -178,7 +178,9 @@ TEMPLATES['content.html'] = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
               {% end %}
             </h2>
             {% if item['published'] %}{{ item['published'] }}{% end %}
+            <a href="#sectionlist_{{ feed_idx }}">Return Feed</a>
             <div>{{ item['content'] }}</div>
+        	<a href="#sectionlist_{{ feed_idx }}">Return Feed</a>
         </div>
         {% end %}
         </div>
